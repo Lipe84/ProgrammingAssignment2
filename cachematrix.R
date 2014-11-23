@@ -5,8 +5,8 @@ makeCacheMatrix <- function(x = matrix()) {         # Variable "X" will be a inv
     inverse <- NULL                                   # Variable "inverse" will be our our inverted-matrix:
     # it is set to "NULL" every time that makeCacheMatrix is called
     
-    set <- function(y) { 
-        x <<- y
+    set <- function(y) {                              # superoperator "<<-" assign "y" to "X" in the environment cointaining 
+        x <<- y                                       # the "set" function
         inverse <<- NULL
     }
     
